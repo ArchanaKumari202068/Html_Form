@@ -43,19 +43,24 @@ body{
     position: relative;
     margin: 2vw 0;
     width: 20vw;
-    border-bottom: 0.1rem solid #fff;
+    border-bottom: 0.2rem solid #fff;
 
 }
 .form-box .input-box input{
-    width: 20vw;
+    width: 21vw;
     height: 45px;
+    
     border:none;
     outline:none;
     background-color: none;
     padding: 0 20px 0 5px;
-    color: #d4eae9;
+    color: #020203;
     font-size: 1rem;
     border-radius: 5px;
+}
+input::placeholder{
+    color: #090909;
+    
 }
 
 .btn{
@@ -73,5 +78,53 @@ body{
     cursor: pointer;
     box-shadow: 3px 0 10px rgba(0,0,0,.5);
     margin-bottom: 5vh;
+
+}
+#result{
+    color: red;
+    font-weight: 600;
+    position: relative;
+    top:25px;
+}
+.popup{
+    width: 30vw;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform .4s, top .4s;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 100px;
+    color:#000;
+}
+
+.popup button{
+    width: 100%;
+    background: #00ff00;
+    padding: 10px 0;
+    margin-top:50px;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+}
+.popup a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 600;
+    letter-spacing: 2px;
+
+}
+.open-slide{
+    top:50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
 
 }
